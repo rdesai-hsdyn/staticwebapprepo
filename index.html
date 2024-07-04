@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Employee Form</title>
+    <title>Sales Form</title>
     <script>
-        async function insertEmployee() {
+        async function insertSale() {
             const name = document.getElementById('name').value;
 
-            const response = await fetch('https://func-futurestage.azurewebsites.net/api/InsertEmployee?code=_X7k7UjDRHusHb7fKgmazYRpXpmxCZ4ikTkShYettXpuAzFuV0QwcA%3D%3D', {
+            const response = await fetch('https://func-futurestage-slot1.azurewebsites.net/api/InsertSale?code=C-MepErtHXS_oIqef43eDqnKyqaohaIKsJcIHmnESzneAzFuRqFHBA%3D%3D', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -20,9 +20,9 @@
     </script>
 </head>
 <body>
-    <h1>Insert Employee</h1>
-    <form onsubmit="event.preventDefault(); insertEmployee();">
-        <label for="name">Name:</label>
+    <h1>Insert Sale</h1>
+    <form onsubmit="event.preventDefault(); insertSale();">
+        <label for="name">Sales Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
         <button type="submit">Insert</button>
