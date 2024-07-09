@@ -5,8 +5,7 @@
     <script>
         async function insertEmployee() {
             const name = document.getElementById('name').value;
-
-            const response = await fetch('https://func-futurestage.azurewebsites.net/api/InsertEmployee?code=sMSpGtg-i_G_UWG2k2XC9hWTrWLS7A9Re2xxti2a1a7qAzFuFCyIVA%3D%3D', {
+            const response = await fetch('https://func-futurestage-slot1.azurewebsites.net/api/InsertEmployee?code=Gbe_BP5CoOyGUdsP9Gx3uY2mWoaM-zTgbNsfpTFZr5JZAzFufCkl2Q%3D%3D', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -20,7 +19,7 @@
     </script>
 </head>
 <body>
-    <h1>Insert Employee</h1>
+    <h1>Insert Employees</h1>
     <form onsubmit="event.preventDefault(); insertEmployee();">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
